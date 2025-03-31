@@ -33,7 +33,7 @@
 
 
 const express = require("express");
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-core");
 const cors = require("cors");
 
 const app = express();
@@ -45,15 +45,11 @@ let browser;
 
 (async () => {
   try {
-   browser = await puppeteer.launch({
+    browser = await puppeteer.launch({
+     executablePath:
+       "/opt/render/.cache/puppeteer/chrome/linux-134.0.6998.35/chrome",
      headless: "new",
-     args: [
-       "--no-sandbox",
-       "--disable-setuid-sandbox",
-       "--disable-gpu",
-       "--disable-dev-shm-usage",
-       "--single-process",
-     ],
+     args: ["--no-sandbox", "--disable-setuid-sandbox"],
    });
 
     console.log("✅ Puppeteer launched successfully.");
@@ -67,6 +63,8 @@ app.get("/screenshot", async (req, res) => {
     if (!browser) {
       console.log("ℹ️ Puppeteer not running, restarting...");
       browser = await puppeteer.launch({
+        executablePath:
+          "/opt/render/.cache/puppeteer/chrome/linux-134.0.6998.35/chrome", // ✅ Added executablePath
         headless: "new",
         args: ["--no-sandbox", "--disable-setuid-sandbox"],
       });
