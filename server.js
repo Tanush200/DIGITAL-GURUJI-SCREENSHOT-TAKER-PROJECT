@@ -45,10 +45,17 @@ let browser;
 
 (async () => {
   try {
-    browser = await puppeteer.launch({
-      headless: "new",
-      args: ["--no-sandbox", "--disable-setuid-sandbox"],
-    });
+   browser = await puppeteer.launch({
+     headless: "new",
+     args: [
+       "--no-sandbox",
+       "--disable-setuid-sandbox",
+       "--disable-gpu",
+       "--disable-dev-shm-usage",
+       "--single-process",
+     ],
+   });
+
     console.log("✅ Puppeteer launched successfully.");
   } catch (error) {
     console.error("❌ Error launching Puppeteer:", error);
