@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #e3f2f9;
+    color: #333;
+}
+
+.infographic {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.infographic h1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #005f73;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.step-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #004d61;
+    background: #b3e0f2;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.step-text {
+    flex: 1;
+    background: #f4f9fb;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.connector {
+    width: 3px;
+    background: #004d61;
+    height: 40px;
+    position: absolute;
+    left: 35px;
+    top: 100%;
+}
+
+.step:last-child .connector {
+    display: none;
+}
+button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f86;
+}

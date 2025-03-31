@@ -1,0 +1,19 @@
+{
+  "name": "digital-guruji-project",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "digital-guruji-project": "file:",
+    "express": "^5.1.0",
+    "puppeteer": "^24.4.0"
+  }
+}
