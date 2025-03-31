@@ -29,14 +29,13 @@ body {
     justify-content: space-between;
     position: relative;
     margin: 0;
-    /* Removed default margin */
-    padding-top: 20px;
-    /* Added padding for separation */
+   padding-top: 20px;
+    
 }
 
 .step:first-child {
     padding-top: 0;
-    /* Remove top padding for the first step */
+    
 }
 
 .step:nth-child(even) {
@@ -57,7 +56,6 @@ body {
     background: #0077b6;
     padding: 15px 25px;
     border-radius: 10px 10px 0 0;
-    /* Top rounded corners */
     min-width: 70px;
     text-align: center;
     position: relative;
@@ -67,10 +65,8 @@ body {
 .step-number-bottom {
     width: 70px;
     height: 10px;
-    /* Height of the bottom part */
     background: #0077b6;
     border-radius: 0 0 10px 10px;
-    /* Bottom rounded corners */
     position: absolute;
     bottom: 0;
 }
@@ -80,18 +76,14 @@ body {
     background: #0077b6;
     position: absolute;
     bottom: -10px;
-    /* Start from the bottom of the half-box */
     left: 50%;
     height: 10px;
-    /* Match height of bottom box */
     transform: translateX(-50%);
     z-index: 1;
 }
 
-/* Adjust horizontal line to connect numbers */
 .horizontal-line {
     width: 121px;
-    /* Increased to better connect numbers */
     height: 3px;
     background: #005f73;
     position: absolute;
@@ -100,25 +92,21 @@ body {
     z-index: 1;
 }
 
-/* Positioning for odd-numbered steps */
+
 .step:nth-child(odd) .horizontal-line {
     left: 100%;
-    /* Extend from the right of the number */
     margin-left: 10px;
-    /* Space between number and text */
-}
 
-/* Positioning for even-numbered steps */
+}
 .step:nth-child(even) .horizontal-line {
     right: 100%;
-    /* Extend from the left of the number */
+
     margin-right: 10px;
-    /* Space between number and text */
+
 }
 
 .step-text {
     background: #e0f2f7;
-    /* Lighter background color */
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -127,16 +115,13 @@ body {
     width: 40%;
 }
 
-/* Style the description heading within .step-text */
+
 .step-text strong {
     color: #005f73;
-    /* Match the main heading color */
     font-weight: bold;
-    /* Make it bold */
     display: block;
-    /* Ensure it's treated as a heading */
     margin-bottom: 5px;
-    /* Add a little space below the heading */
+
 }
 
 .connector {
