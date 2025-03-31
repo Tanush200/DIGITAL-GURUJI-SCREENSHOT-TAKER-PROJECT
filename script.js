@@ -1,6 +1,6 @@
 document.getElementById("screenshotBtn").addEventListener("click", async () => {
   const response = await fetch(
-    "https://digital-guruji-project-2iyiqii6m-tanush200s-projects.vercel.app"
+    "https://digital-guruji-screenshot-taker-project-4.onrender.com/screenshot"
   );
   const blob = await response.blob();
 
