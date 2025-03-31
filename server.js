@@ -11,7 +11,7 @@ app.get("/screenshot", async (req, res) => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
-  await page.goto("https://helpful-panda-045468.netlify.app/", {
+  await page.goto("https://remarkable-pothos-f697a4.netlify.app/", {
     waitUntil: "networkidle2",
   });
 

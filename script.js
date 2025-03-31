@@ -8,3 +8,4 @@ document.getElementById("screenshotBtn").addEventListener("click", async () => {
   link.download = "screenshot.png";
   link.click();
 });
+
