@@ -105,7 +105,7 @@ app.get("/screenshot", async (req, res) => {
 
     console.log("🌍 Navigating to page...");
     const response = await page.goto(
-      "https://candid-madeleine-89d933.netlify.app/",
+      "https://stirring-banoffee-db4f4e.netlify.app/",
       {
         waitUntil: "networkidle2",
       }
