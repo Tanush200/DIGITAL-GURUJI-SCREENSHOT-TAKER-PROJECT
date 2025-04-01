@@ -104,9 +104,12 @@ app.get("/screenshot", async (req, res) => {
     await page.setViewport({ width: 1280, height: 800 });
 
     console.log("🌍 Navigating to page...");
-    const response = await page.goto("http://localhost:5500", {
-      waitUntil: "networkidle2",
-    });
+    const response = await page.goto(
+      "https://candid-madeleine-89d933.netlify.app/",
+      {
+        waitUntil: "networkidle2",
+      }
+    );
 
     console.log(`Status code: ${response.status()}`);
 
